@@ -1,0 +1,210 @@
+.background{
+   background-color: rgba(181,216,255,255);
+    background-repeat: no-repeat;
+background-size: cover;
+height: 790px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+.cardContainer {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card1 {
+    background-image: url("/public/2.png");
+    background-size: 277px;
+    position: relative;
+    width: 934px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(92,156,229,255);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    cursor: pointer;
+    background-position-y: 135px;
+    background-position-x: -102px;
+    background-repeat: no-repeat;
+  }
+ 
+  
+  
+  .temperature {
+    font-size: 2.8em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    position: relative;
+    right: 354px;
+    top: 50px;
+  }
+  .placename {
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    position: relative;
+    right: 354px;
+    top: 44px;
+  }
+  .tempdescription {
+    font-size: 1.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    position: relative;
+    right: 354px;
+    top: 22px;
+  }
+ 
+  .card2position{
+   
+    
+    right: 360px;
+
+
+  }
+  .card1position{
+   
+    
+    left: 340px;
+
+
+  }
+  .card2{
+    position: relative;
+    width: 859px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(228,241,255,255);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    cursor: pointer;
+  }
+  .card3{
+    position: relative;
+    width: 259px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255,255,255,255);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    cursor: pointer;
+  }
+  .rowposition{
+    position: relative;
+    top: 144px
+
+}
+  .colpadding{
+    padding: 3px 0px 3px 0px; 
+ }
+ .spandesign{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+ }
+ .spandesign2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: 16px;
+ }
+ .imagesize{
+  width: 80px;
+  position: inherit;
+  right: -93px;
+  top: 3px;
+ }
+ .imagesize1{
+  width: 40px;
+    position: inherit;
+    right: -93px;
+    top: 25px;
+    border-radius: 19px;
+ }
+
+ .searchbar{
+  border: none;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 58px; 
+
+ }
+ /* .searchbar{
+  height: 76px;
+  width: 813px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0px 7px 27px -8px #9faaae;
+  position: relative;
+  top: 58px; 
+
+ } */
+ .coolinput {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+  max-width: 480px;
+  
+}
+.coolinput input[type=text].input {
+  padding: 11px 10px;
+  font-size: 15px;
+  border: 1px #dadada solid;
+  border-radius: 30px;
+  background: white;
+  height: 57px;
+  width: 480px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.coolinput input[type=text].input:focus {
+  outline: none;
+  
+}
+.button3:hover {
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+
+.button3:active {
+  transform: translate(0em, 0.2em);
+}
+
+.button3 {
+  margin-left: 5px;
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: solid;
+  background: #3b83fb;
+  border-color: #3b83fb;
+  color: #fff; 
+  border-radius: 30px;
+  width: auto;
+  font-size: 13px;
+  height: 54px;
+  position: relative;
+}
+.description{
+  position: relative;
+  top: 1000px;
+}
