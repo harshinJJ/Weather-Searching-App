@@ -5,6 +5,9 @@ import { fetchweather } from "../redux/slice";
 
 const HomePage = () => {
   const [searchInput, setSearchInput] = useState("");
+  const kelvinToCelsius = (kelvin) => {
+    return kelvin - 273.15;
+  };
   const weather = useSelector((state) => state.weatherapp.data);
   const Dispatch = useDispatch();
   const handlesearch = () => {
@@ -19,7 +22,9 @@ const HomePage = () => {
         <div class="cardContainer">
           <div class="card1 card1position">
             <p1 class="placename">{weather.data?.name}</p1>
-            <p class="temperature">{weather.data?.main?.temp}</p>
+            <p class="temperature">
+              {kelvinToCelsius(weather.data?.main?.temp).toFixed(2)}°C
+            </p>
             <span class="tempdescription">
               {weather.data?.weather[0].description}
             </span>
@@ -74,7 +79,8 @@ const HomePage = () => {
                   <div class="card3 card3position">
                     <span className="spandesign">MaxTemp</span>
                     <span className="spandesign2">
-                      {weather.data?.main?.temp_max}
+                      {kelvinToCelsius(weather.data?.main?.temp_max).toFixed(2)}
+                      °C
                     </span>
                     <img src="/7.png" alt="" className="imagesize1" />
                   </div>
@@ -83,16 +89,20 @@ const HomePage = () => {
                   <div class="card3 card3position">
                     <span className="spandesign">Min Temp</span>
                     <span className="spandesign2">
-                      {weather.data?.main?.temp_min}
+                      {kelvinToCelsius(weather.data?.main?.temp_min).toFixed(2)}
+                      °C
                     </span>
                     <img src="/6.png" alt="" className="imagesize1" />
                   </div>
                 </div>
                 <div className="col-4 colpadding">
                   <div class="card3 card3position">
-                    <span className="spandesign">Pressure</span>
+                    <span className="spandesign">Feels Like</span>
                     <span className="spandesign2">
-                      {weather.data?.main?.pressure}
+                      {kelvinToCelsius(weather.data?.main?.feels_like).toFixed(
+                        2
+                      )}
+                      °C
                     </span>
                     <img src="/8.png" alt="" className="imagesize1" />
                   </div>

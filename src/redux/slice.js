@@ -12,6 +12,7 @@ export const fetchweather = createAsyncThunk("weather/get", async (datas) => {
       const data = await axios.get(
         "https://api.openweathermap.org/data/2.5/weather?q=Kozhikode&appid=1124ead6a7afed5b553176f1442dfc9c"
       );
+      console.log(data);
       return data;
     } else {
       const data = await axios.get(
