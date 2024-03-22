@@ -10,7 +10,7 @@ export const fetchweather = createAsyncThunk("weather/get", async (datas) => {
   try {
     if (!datas || datas.trim() === "") {
       const data = await axios.get(
-        "https://api.openweathermap.org/data/2.5/weather?q=Kozhikode&appid=1124ead6a7afed5b553176f1442dfc9c"
+        "https://api.openweathermap.org/data/2.5/weather?q=Kerala&appid=1124ead6a7afed5b553176f1442dfc9c"
       );
       console.log(data);
       return data;
