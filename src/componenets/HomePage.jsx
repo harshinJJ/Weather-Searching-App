@@ -47,6 +47,12 @@ const HomePage = () => {
                   </button>
                 </div>
               </div>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
               <div className="row rowposition">
                 <div className="col-4 colpadding">
                   <div class="card3 card3position">

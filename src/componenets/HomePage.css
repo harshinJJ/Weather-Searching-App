@@ -107,7 +107,7 @@ overflow: hidden;
   }
   .rowposition{
     position: relative;
-    top: 144px
+    left: 10px;
 
 }
   .colpadding{
